@@ -28,3 +28,4 @@ O resultado enriquecido é exportado para um novo arquivo `santander_marketing_f
 2. Certifique-se de ter o Python e o Pandas instalados: `pip install pandas`.
 3. Execute o script principal: `python pipeline_etl.py`."# santander-dev-week-etl."  
 "# santander-dev-week-etl."  
+Obrigado Senhor!
