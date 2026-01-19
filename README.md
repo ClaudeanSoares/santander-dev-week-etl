@@ -23,7 +23,7 @@ Durante a execução, a API original do desafio ficou indisponível. Em vez de p
 
 Siga os passos abaixo para rodar a automação em sua máquina:
 
-1. **Clonar o repositório:**
+1. **Clonar:**
    ```bash
    git clone [https://github.com/ClaudeanSoares/santander-dev-week-etl.git](https://github.com/ClaudeanSoares/santander-dev-week-etl.git)
 
