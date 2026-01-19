@@ -24,8 +24,8 @@ Criei um motor de regras que gera mensagens personalizadas baseadas no **perfil 
 O resultado enriquecido é exportado para um novo arquivo `santander_marketing_final.csv`, pronto para ser utilizado pela equipe de marketing ou disparado via sistema de e-mail.
 
 ## 🚀 Como Executar
-1. Clone o repositório.
-2. Certifique-se de ter o Python e o Pandas instalados: `pip install pandas`.
-3. Execute o script principal: `python pipeline_etl.py`."# santander-dev-week-etl."  
+1.  Clone o repositório.
+2.  Certifique-se de ter o Python e o Pandas instalados: `pip install pandas`.
+3.  Execute o script principal: `python pipeline_etl.py`."# santander-dev-week-etl."  
 "# santander-dev-week-etl."  
-Obrigado Senhor!
+                                                                               Obrigado Senhor!
