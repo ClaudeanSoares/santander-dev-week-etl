@@ -1,31 +1,31 @@
-# 🚀 Santander Dev Week 2023 - Pipeline ETL Resiliente com Python
+# 🚀 Santander 2025: Ciência de Dados com Python
+## Evolução de um Pipeline ETL Resiliente
 
-## 📝 Sobre o Projeto
-Este projeto foi desenvolvido como parte do desafio Santander Dev Week. O objetivo original era consumir uma API de clientes, transformar os dados usando IA e devolver as informações para a API.
+Este repositório documenta minha jornada técnica desde a Santander Dev Week até o foco atual em Ciência de Dados em 2025. O projeto surgiu do desafio de transformar dados de clientes de maneira inteligente, escalável e estratégica.
 
-**O Diferencial:** Devido à indisponibilidade da API original, decidi arquitetar uma solução **local e independente**. Em vez de apenas desistir do projeto, criei um fluxo de dados (ETL) que processa arquivos CSV e utiliza lógica de negócios condicional para simular o comportamento de uma IA Generativa de forma eficiente.
+## 💡 Meu Diferencial: Resiliência Técnica
+Durante a execução, a API original do desafio ficou indisponível. Em vez de pausar o aprendizado, decidi arquitetar uma solução **local e independente**. Desenvolvi um fluxo de dados (ETL) que processa arquivos CSV e utiliza uma lógica de negócios modular para simular o comportamento de uma IA Generativa, personalizando a experiência do cliente com eficiência.
 
-## 🛠️ Tecnologias Utilizadas
-- **Python 3.x**
-- **Pandas:** Para manipulação e análise de dados de alto desempenho.
-- **Lógica de Programação:** Estruturação modular em funções (Clean Code).
+## 🛠️ Tecnologias e Pilares
+* **Python 3.x:** A base sólida para toda a automação do sistema.
+* **Pandas:** Biblioteca essencial para manipulação e análise de dados de alta performance.
+* **Clean Code:** Organização modular em funções para garantir um código legível, profissional e de fácil manutenção.
 
-## ⚙️ O Pipeline ETL
+## ⚙️ O Fluxo do Pipeline (ETL)
 
-### 1. Extract (Extração)
-Os dados são lidos de um arquivo `clientes_origem.csv`, simulando a extração de um banco de dados legado. Usei o Pandas para garantir que o processo seja rápido e seguro.
+1. **Extract (Extração):** Realiza a leitura do arquivo `clientes_origem.csv`, simulando com precisão o consumo de dados de um sistema bancário real.
+2. **Transform (Transformação):** Implementação de um motor de regras para gerar mensagens personalizadas. O sistema analisa o perfil financeiro (limite de crédito) e sugere caminhos específicos:
+    * **Perfil VIP:** Foco em ofertas exclusivas e oportunidades de investimentos.
+    * **Perfil em Crescimento:** Dicas práticas de educação financeira e incentivos para expansão de crédito.
+3. **Load (Carregamento):** Exportação dos dados enriquecidos para o arquivo `santander_marketing_final.csv`, estruturado para uso imediato por equipes de marketing.
 
-### 2. Transform (Transformação)
-Criei um motor de regras que gera mensagens personalizadas baseadas no **perfil financeiro** do cliente (Limite do Cartão) e em seus **interesses**. 
-- Clientes com limite alto recebem ofertas de investimentos VIP.
-- Clientes em crescimento recebem mensagens de incentivo e educação financeira.
+## 🚀 Como Executar o Projeto
 
-### 3. Load (Carregamento)
-O resultado enriquecido é exportado para um novo arquivo `santander_marketing_final.csv`, pronto para ser utilizado pela equipe de marketing ou disparado via sistema de e-mail.
+Siga os passos abaixo para rodar a automação em sua máquina:
 
-## 🚀 Como Executar
-1.  Clone o repositório.
-2.  Certifique-se de ter o Python e o Pandas instalados: `pip install pandas`.
-3.  Execute o script principal: `python pipeline_etl.py`."# santander-dev-week-etl."  
-"# santander-dev-week-etl."  
-                                                                               Obrigado Senhor!
+1. **Clonar o repositório:**
+   ```bash
+   git clone [https://github.com/ClaudeanSoares/santander-dev-week-etl.git](https://github.com/ClaudeanSoares/santander-dev-week-etl.git)
+
+---
+*Obrigado, Senhor!*
