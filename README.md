@@ -1,31 +1,62 @@
-# 🚀 Santander 2025: Ciência de Dados com Python
-## Evolução de um Pipeline ETL Resiliente
+# 🏦 Santander Dev Week 2025: Ciência de Dados com Python
+## Evolução de um Pipeline ETL Resiliente e Inteligente
 
-Este repositório documenta minha jornada técnica desde a Santander Dev Week até o foco atual em Ciência de Dados em 2025. O projeto surgiu do desafio de transformar dados de clientes de maneira inteligente, escalável e estratégica.
+![Status do Projeto](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
+![Tecnologia](https://img.shields.io/badge/Tecnologia-Python%20%7C%20OpenAI-blue)
+![Ambiente](https://img.shields.io/badge/Ambiente-Google%20Colab%20%26%20VS%20Code-orange)
+
+## 🌟 O Desafio
+O objetivo deste projeto foi agir como um **Cientista de Dados do Santander**, desenvolvendo um pipeline ETL (Extract, Transform, Load) capaz de gerar valor real para o negócio. O foco está na personalização em massa de mensagens de marketing para investimentos, unindo automação e Inteligência Artificial.
 
 ## 💡 Meu Diferencial: Resiliência Técnica
-Durante a execução, a API original do desafio ficou indisponível. Em vez de pausar o aprendizado, decidi arquitetar uma solução **local e independente**. Desenvolvi um fluxo de dados (ETL) que processa arquivos CSV e utiliza uma lógica de negócios modular para simular o comportamento de uma IA Generativa, personalizando a experiência do cliente com eficiência.
-
-## 🛠️ Tecnologias e Pilares
-* **Python 3.x:** A base sólida para toda a automação do sistema.
-* **Pandas:** Biblioteca essencial para manipulação e análise de dados de alta performance.
-* **Clean Code:** Organização modular em funções para garantir um código legível, profissional e de fácil manutenção.
+Durante o desenvolvimento, deparei-me com desafios de ambiente e conectividade. Em vez de interromper o processo, decidi arquitetar uma solução **resiliente e independente**. Desenvolvi um fluxo de dados modular que garante o funcionamento tanto em nuvem (Google Colab) quanto localmente (VS Code), tratando erros de diretório e garantindo a integridade da fonte de dados via auto-setup.
 
 ## ⚙️ O Fluxo do Pipeline (ETL)
 
-1. **Extract (Extração):** Realiza a leitura do arquivo `clientes_origem.csv`, simulando com precisão o consumo de dados de um sistema bancário real.
-2. **Transform (Transformação):** Implementação de um motor de regras para gerar mensagens personalizadas. O sistema analisa o perfil financeiro (limite de crédito) e sugere caminhos específicos:
-    * **Perfil VIP:** Foco em ofertas exclusivas e oportunidades de investimentos.
-    * **Perfil em Crescimento:** Dicas práticas de educação financeira e incentivos para expansão de crédito.
-3. **Load (Carregamento):** Exportação dos dados enriquecidos para o arquivo `santander_marketing_final.csv`, estruturado para uso imediato por equipes de marketing.
+O projeto segue os três pilares fundamentais da Engenharia de Dados:
+
+1.  **Extract (Extração) 🔍**
+    * Consumo de dados brutos da API oficial do Santander.
+    * Implementação de lógica de segurança que gera e lê arquivos `SDW2023.csv` automaticamente, evitando falhas de execução (`FileNotFoundError`).
+
+2.  **Transform (Transformação) 🤖**
+    * **IA Generativa:** Integração com a **API da OpenAI (GPT-3.5-Turbo)** para atuar como um consultor financeiro virtual.
+    * **Motor de Regras:** O sistema analisa o perfil financeiro do cliente e gera recomendações exclusivas (máx. 100 caracteres) com foco em educação financeira e oportunidades de investimento.
+
+3.  **Load (Carregamento) 🚀**
+    * Atualização dos registros enriquecidos de volta na API via métodos HTTP PUT.
+    * Exportação final para estruturação de relatórios prontos para uso pelas equipes de marketing.
+
+## 🛠️ Tecnologias e Pilares
+* **Python 3.13:** Base para automação e scripts.
+* **Pandas:** Manipulação e análise de dados de alta performance.
+* **OpenAI API:** Processamento de Linguagem Natural (NLP) para personalização.
+* **Clean Code:** Organização modular em funções para garantir manutenibilidade e legibilidade profissional.
 
 ## 🚀 Como Executar o Projeto
 
-Siga os passos abaixo para rodar a automação em sua máquina:
-
-1. **Clonar:**
-   ```bash
-   git clone [https://github.com/ClaudeanSoares/santander-dev-week-etl.git](https://github.com/ClaudeanSoares/santander-dev-week-etl.git)
+1.  **Clonar o repositório:**
+    ```bash
+    git clone [https://github.com/ClaudeanSoares/santander-dev-week-etl.git](https://github.com/ClaudeanSoares/santander-dev-week-etl.git)
+    ```
+2.  **Instalar dependências:**
+    ```bash
+    pip install pandas requests openai
+    ```
+3.  **Configurar Chave de API:**
+    * No Colab, utilize os `Secrets` com a chave `OPENAI_API_KEY`.
+    * No VS Code, configure sua variável de ambiente local.
 
 ---
+
+### 🖋️ Autoria e Propósito
+Este projeto foi desenvolvido por **Claudean Soares**.
+
+> "A ciência sem a virtude é uma arma para o mal." — *Santo Agostinho*
+
+Neste projeto, a técnica foi utilizada com o propósito de criar clareza e auxílio financeiro para o próximo.
+
+---
+**Nota:** Projeto desenvolvido durante a Santander Dev Week 2025, com o auxílio de IA Generativa para a estruturação do pipeline ETL e resolução de bugs de ambiente local.
+
 *Obrigado, Senhor!*
