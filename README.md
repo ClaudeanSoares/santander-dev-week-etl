@@ -35,7 +35,7 @@ O projeto segue os três pilares fundamentais da Engenharia de Dados:
 
 ## 🚀 Como Executar o Projeto
 
-1.  **Clonar o repositório:**
+1.  **Clonar**
     ```bash
     git clone [https://github.com/ClaudeanSoares/santander-dev-week-etl.git](https://github.com/ClaudeanSoares/santander-dev-week-etl.git)
     ```
